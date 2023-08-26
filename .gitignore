@@ -1,0 +1,18 @@
+.vscode/
+logs/
+logs-debug/
+*__pycache__*
+*.ipynb_checkpoints
+# *.ipynb
+save
+model/*
+!model/*.py
+*.svg
+*.pdf
+*.eps
+*.log
+*.txt
+*.pkl
+submission/
+example.sh
+*steal*

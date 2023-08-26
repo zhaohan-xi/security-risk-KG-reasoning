@@ -1,0 +1,14 @@
+cuda: True
+do_train: True
+do_valid: True
+do_test: True
+
+domain: med 
+kg_path: ../save/data/medkg 
+q_path:  ../save/data/medQ_AB
+
+d: 300
+model: vec 
+lr: 0.001 
+krl_train_steps: 100000 
+valid_steps: 5000 

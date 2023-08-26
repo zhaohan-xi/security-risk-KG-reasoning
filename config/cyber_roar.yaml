@@ -1,0 +1,42 @@
+cuda: True
+do_train: True
+do_test: True
+
+# targeted model
+domain: cyber 
+kg_path: ../save/data/cyberkg 
+q_path:  ../save/data/cyberQ_AB
+
+hidden_dim: 300
+model: box 
+lr: 0.001 
+krl_train_steps: 60000  
+valid_steps: 5000 
+
+# atack
+attack: kgp        # kgp, eva, cop
+atk_obj: untargeted  #  targeted, untargeted
+
+tar_evi: Chrome 
+tar_evi_cate: product
+# tar_evi: AP:22
+# tar_evi_cate: attack-pattern
+# tar_evi: TECH:T1550.001 
+# tar_evi_cate: technique
+
+tar_ans:  CVE-2021-21189
+max_atk_iter: 2        
+
+sur_model: box
+sur_hidden_dim: 256
+sur_cen_layer: 2
+sur_off_layer: 2
+
+# kg poisoning 
+atk_budget: 100            
+atk_lambda: 10
+atk_steps: 10000       
+
+# evasion
+eva_num: 2
+eva_optim_steps: 50  

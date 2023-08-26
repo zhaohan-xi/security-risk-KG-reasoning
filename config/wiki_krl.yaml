@@ -1,0 +1,14 @@
+cuda: True
+do_train: True
+do_valid: False # don't validate formulation
+do_test: True
+
+domain: wiki 
+kg_path: ../save/data/wikikg 
+q_path:  ../save/data/wikiQ
+
+hidden_dim: 300
+model: vec 
+lr: 0.001 
+krl_train_steps: 100000 
+valid_steps: 5000 

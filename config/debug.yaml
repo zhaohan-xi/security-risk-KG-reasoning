@@ -1,0 +1,6 @@
+verbose: True
+krl_train_steps: 100 
+max_atk_iter: 2
+atk_steps: 3
+eva_optim_steps: 3
+do_test: True

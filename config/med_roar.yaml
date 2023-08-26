@@ -1,0 +1,39 @@
+cuda: True
+do_train: True
+do_test: True
+
+# targeted model
+domain: med 
+kg_path: ../save/data/medkg 
+q_path:  ../save/data/medQ_AB
+
+hidden_dim: 300
+model: vec 
+lr: 0.001 
+krl_train_steps: 60000  
+valid_steps: 5000 
+
+# atack
+attack: eva        # kgp, eva, cop
+atk_obj: targeted  # targeted, untargeted
+
+tar_evi: Symptom:D004487    
+tar_ans: Disease:MESH:D065631   
+tar_evi_cate: Symptom
+tar_A2B_path: reverse:positive:Compound:Disease
+max_atk_iter: 1
+
+sur_model: box
+sur_hidden_dim: 400
+sur_cen_layer: 4
+sur_off_layer: 4
+
+# kg poisoning 
+atk_budget: 100            
+atk_lambda: 10
+atk_steps: 10000       
+# kg_rm_ratio: 0.3
+
+# evasion
+eva_num: 2
+eva_optim_steps: 500  

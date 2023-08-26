@@ -1,0 +1,14 @@
+cuda: True
+do_train: True
+do_valid: True
+do_test: True
+
+domain: cyber 
+kg_path: ../save/data/cyberkg 
+q_path:  ../save/data/cyberQ_AB
+
+hidden_dim: 300
+model: vec # box 
+lr: 0.001 
+krl_train_steps: 100000 
+valid_steps: 5000 
