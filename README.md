@@ -49,7 +49,8 @@ We also provide a runnable demo in `demo.sh` for an easily use, but you have to 
 
 ## Cite
 Please cite our work:
-> @inproceedings{kg-attack,
+
+@inproceedings{kg-attack,
   title="{On the Security Risks of Knowledge Graph Reasoning}",
   author={Xi, Zhaohan and Du, Tianyu and Pang, Ren and Li, Changjiang and Ji, Shouling and Luo, Xiapu and Xiao, Xusheng and Ma, Fenglong and Wang, Ting},
   booktitle={Proceedings of USENIX Security Symposium (SEC)},
