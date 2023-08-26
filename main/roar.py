@@ -7,11 +7,11 @@ import numpy as np
 from model.geo import KGReasoning
 from config.config import parse_args
 
-from main.krl_AB import KRL
+from main.kgr import KRL
 import helper.utils as util
-import attack.roar_init as roar_init
-import attack.roar_kgp as kgp
-import attack.roar_eva as eva
+import roar.init as init
+import roar.kp as kgp
+import roar.qm as eva
 import gendata.cyber.genq_cyber as cyberq
 import gendata.med.genq_med as medq
 
@@ -37,8 +37,8 @@ class ROAR:
             os.makedirs(self.krl.args.atk_q_path, exist_ok=False)
 
         
-        self.tar_path, self.tar_ans, self.tar_A2B_r = roar_init.set_target(self.krl.args)
-        roar_init.init_attack(self.krl.args, self.tar_path, self.tar_ans, self.tar_A2B_r, self.krl.taskA, self.krl.taskB)
+        self.tar_path, self.tar_ans, self.tar_A2B_r = init.set_target(self.krl.args)
+        init.init_attack(self.krl.args, self.tar_path, self.tar_ans, self.tar_A2B_r, self.krl.taskA, self.krl.taskB)
 
 
     def run(self):

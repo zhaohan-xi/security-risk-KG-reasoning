@@ -1,24 +1,14 @@
-# Adv-Knowledge-Reasoning 
+# Codes of USENIX Security'23 paper ``On the Security Risks of Knowledge Graph Reasoning''
 
-## Summary
-** This repository can:
-- construct a cyber-domain KG and a clinical KG
-- generate cyber-domain queries for querying CVE/mitigation, and clinical queries for queries diseases/medicine
-- use KRL model (GQE and Query2Box) to answer those queries
-- conduct ROAR attack against above KRL models
+(TO COMPLETE)
 
 ## Sources
 
-**Data Source**
+**Constructing data**
 
-We construct Cybersecurity KG with recorded CVEs ([link](https://www.cvedetails.com/browse-by-date.php)), from which we crawled vulnerability-related information such as affected vendor, product, version, vulnerability types, descriptions, relevant CWE, etc. One can refer to `./data/cyberkg/crawler.ipynb` to check the information we crawled. We construct a Cybersecurity KG with queries/answers in `gen_cyberkg.py`.
+- Cyber KG
 
-**Model Source**
-
-Here are models we currently used:
-
-- [x] [Query2box](https://arxiv.org/abs/2002.05969)
-- [x] [GQE](https://arxiv.org/abs/1806.01445)
+We construct Cyber KG with recorded CVEs ([link](https://www.cvedetails.com/browse-by-date.php)), from which we crawled vulnerability-related information such as affected vendor, product, version, vulnerability types, descriptions, relevant CWE, etc. One can refer to `./data/cyberkg/crawler.ipynb` to check the information we crawled. We construct a Cybersecurity KG with queries/answers in `gen_cyberkg.py`.
 
 We modify on the released codes from [this repository](https://github.com/snap-stanford/KGReasoning).
 

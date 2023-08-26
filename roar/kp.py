@@ -13,7 +13,7 @@ import logging
 from tqdm import tqdm
 from torch.utils.data.dataloader import DataLoader
 
-from main.krl_AB import KRL
+from main.kgr import KRL
 from model.geo import KGReasoning
 import gendata.cyber.cyberkg_utils as cyber
 import gendata.med.medkg_utils as med

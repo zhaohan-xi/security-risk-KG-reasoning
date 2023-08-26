@@ -17,7 +17,7 @@ from config.config import parse_args
 import helper.utils as util
 from gendata.cyber.cyberkg_utils import zeroday_metrics
 from torch.utils.data import DataLoader
-from loader.loader import TestDataset, TrainDataset, SingledirectionalOneShotIterator
+from helper.loader import TestDataset, TrainDataset, SingledirectionalOneShotIterator
 from model.geo import KGReasoning
 
 class KRL:
