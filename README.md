@@ -1,4 +1,4 @@
-# Codes of USENIX Security'23 paper ``On the Security Risks of Knowledge Graph Reasoning''
+# Codes of USENIX Security'23 paper "On the Security Risks of Knowledge Graph Reasoning"
 
 (TO COMPLETE)
 
@@ -47,4 +47,12 @@ To run the code, one needs to first construct a CyberKG and its QA, then feed th
 We also provide a runnable demo in `demo.sh` for an easily use, but you have to download the crawled CVE files from [link](https://github.com/HarrialX/knowledge-base) and change argparser `raw_path` in `gen_cyberkg.py`.
 
 
+## Cite
+Please cite our work:
+> @inproceedings{kg-attack,
+  title="{On the Security Risks of Knowledge Graph Reasoning}",
+  author={Xi, Zhaohan and Du, Tianyu and Pang, Ren and Li, Changjiang and Ji, Shouling and Luo, Xiapu and Xiao, Xusheng and Ma, Fenglong and Wang, Ting},
+  booktitle={Proceedings of USENIX Security Symposium (SEC)},
+  year={2023}
+}
 
